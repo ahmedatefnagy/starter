@@ -15,5 +15,11 @@ return [
 
     'hello'=>'اهلابكم',
     'welcome'=>'مرحبابكم',
+    'offer name'=>'اسم العرض مطلوب',
+    'name max'=>'الاسم اكبر من المسموح به',
+    'name unique'=>'اسم العرض موجود',
+    'price required'=>'السعر مطلوب',
+    'price numeric'=>'سعر العرض يجب ان يكون ارقام فقط',
+    'details required'=>'التفاصيل مطلوبة',
 
 ];

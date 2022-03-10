@@ -13,7 +13,7 @@ class UserController extends Controller
 
     public function getIndex(){
         //pass of array
-        $data=['a'=>'ahmed','b'=>'atef','age'=>30,'city'=>'minya'];
+        $data = ["a"=>"35", "Ben"=>"37", "b"=>"43"];
         //pass of object
         $obj=new \stdClass();
         $obj->na='ahmed';

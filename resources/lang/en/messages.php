@@ -15,5 +15,12 @@ return [
 
     'hello'=>'HELLO',
     'welcome'=>'WELCOME',
+    'offer name'=>'name offer is required',
+    'name max'=>'length max char 100',
+    'name unique'=>'name is exists',
+    'price required'=>'Price is required',
+    'price numeric'=>' price is numbers only',
+    'details required'=>'details is required',
+
 
 ];

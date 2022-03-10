@@ -113,13 +113,25 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::group(['namespace'=>'Fornt',],function (){
-    Route::get('index','UserController@getIndex');
-    Route::get('landing','LandingController@showLading');
-    Route::get('about','LandingController@showabout');
+//Route::group(['namespace'=>'Fornt',],function (){
+//    Route::get('index','UserController@getIndex');
+//    Route::get('landing','LandingController@showLading');
+//    Route::get('about','LandingController@showabout');
+//});
+//
+//Auth::routes(['verify'=>true]);
+//
+//Route::get('/', 'HomeController@index')->name('home')->Middleware('verify');
+
+Route::group(['prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]],function (){
+    Route::group(['prefix'=>'offers','namespace'=>'Fornt'],function(){
+//    Route::get('store','FirstController@store');
+        Route::get('show','FirstController@getFillable');
+        //LaravelLocalization::setLocale()(خاص بالترجمة )
+        Route::post('store','FirstController@store')->name('offers.store');
+        Route::get('index','UserController@getIndex');
+        Route::get('create','FirstController@create');
+    });
 });
-
-Auth::routes(['verify'=>true]);
-
-Route::get('/', 'HomeController@index')->name('home')->Middleware('verify');
 

@@ -67,23 +67,29 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
+
+
 {{--                    messages.welcome->(ملف الترجمه.مفتاح الكلمة-> ويكون نفس المفتاح مكتوب في جميع ملفات اللغات المختلفة)--}}
-                    {{__('messages.welcome')}}
-                    @if($obj->na == 'ahmed')
-                        <h3>'yes is ahmed'</h3>
-                    @else
-                        <h3>'no is ahmed'</h3>
-                    @endif
+{{--                    {{__('messages.welcome')}}--}}
+{{--                    @if($obj->na == 'ahmed')--}}
+{{--                        <h3>'yes is ahmed'</h3>--}}
+{{--                    @else--}}
+{{--                        <h3>'no is ahmed'</h3>--}}
+{{--                    @endif--}}
 
 {{--                    @foreach($data as $_data)--}}
 {{--                        <p>{{$_data}}</p>--}}
 {{--                    @endforeach--}}
 
-                    @forelse($data as $_data)
-                        <p>{{$_data}}</p>
-                    @empty
-                        <p>empty array</p>
-                    @endforelse
+{{--                    @forelse($data as $_data)--}}
+{{--                        <p>{{$_data}}</p>--}}
+{{--                    @empty--}}
+{{--                        <p>empty array</p>--}}
+{{--                    @endforelse--}}
+                    <p>{{$data['a']}}</p>
+                    <p>{{$data['b']}}</p>
+                    <p>{{$obj->na}}</p>
+
 
 
                 </div>
