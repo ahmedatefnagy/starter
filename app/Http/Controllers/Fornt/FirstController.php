@@ -112,4 +112,9 @@ class FirstController extends Controller
 //                'details.required'=>trans('messages.details required'),
 //            ];
 //    }
+
+    public function editOffer($offer_id){
+        return $offer_id;
+    }
+
 }

@@ -103,7 +103,8 @@
                     <th scope="col">#</th>
                     <th scope="col">{{trans('messages.offer name')}}</th>
                     <th scope="col">{{trans('messages.offer_price')}}</th>
-                    <th scope="col">{{trans('messages.offer details')}}</th>
+                    <th scope="col">{{trans('messages.offer_details')}}</th>
+                    <th scope="col">{{trans('messages.offer operation')}}</th>
 
                 </tr>
                 </thead>
@@ -115,6 +116,8 @@
                         <td>{{$offer->name}}</td>
                         <td>{{$offer->price}}</td>
                         <td>{{$offer->details}}</td>
+                        <td><a href="{{url('offers/edit/'. $offer->id)}}" class="btn btn-outline-success">{{trans('messages.update offer')}}</a></td>
+
                     </tr>
                 @endforeach
                 </tbody>

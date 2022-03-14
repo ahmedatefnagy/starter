@@ -130,9 +130,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
         Route::get('show','FirstController@getFillable');
         //LaravelLocalization::setLocale()(خاص بالترجمة )
         Route::post('store','FirstController@store')->name('offers.store');
-        Route::get('index','UserController@getIndex');
         Route::get('create','FirstController@create');
+        Route::get('index','UserController@getIndex');
         Route::get('all','FirstController@getAllOffers');
+        Route::get('edit/{offer_id}','FirstController@editOffer');
+        Route::post('update','FirstController@updateOffer')->name('offers.update');
     });
 });
 

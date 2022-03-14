@@ -32,6 +32,8 @@ return [
     'offer_name'=>'اسم العرض',
     'offer_price'=>'سعر العرض',
     'offer_details'=>'تفاصيل العرض',
+    'offer operation'=>'العمليات',
+    'update offer'=>'تعديل العرض',
 
 
 ];

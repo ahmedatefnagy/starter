@@ -32,6 +32,8 @@ return [
     'offer_name'=>'Offer Name',
     'offer_price'=>'Offer Price',
     'offer_details'=>'Offer Details',
+    'offer operation'=>'Offer Operation',
+    'update offer'=>'Update Offer',
 
 
 ];
