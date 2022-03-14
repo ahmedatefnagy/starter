@@ -21,6 +21,17 @@ return [
     'price required'=>'Price is required',
     'price numeric'=>' price is numbers only',
     'details required'=>'details is required',
+    'add your offer'=>'Add your offer',
+    'offer name_en'=>'Offer Name English',
+    'offer name_ar'=>'Offer Name Arabic',
+    'offer price'=>'Offer Price',
+    'offer details_en'=>'Offer Details English',
+    'offer details_ar'=>'Offer Details Arabic',
+    'save offer'=>'Save Offer',
+    'store'=>'store',
+    'offer_name'=>'Offer Name',
+    'offer_price'=>'Offer Price',
+    'offer_details'=>'Offer Details',
 
 
 ];

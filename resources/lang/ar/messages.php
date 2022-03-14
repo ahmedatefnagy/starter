@@ -21,5 +21,17 @@ return [
     'price required'=>'السعر مطلوب',
     'price numeric'=>'سعر العرض يجب ان يكون ارقام فقط',
     'details required'=>'التفاصيل مطلوبة',
+    'add your offer'=>'اضافة عرض',
+    'offer name_en'=>'اسم العرض بالانجليزية',
+    'offer name_ar'=>'اسم العرض بالعربية',
+    'offer price'=>'سعر العرض',
+    'offer details_en'=>'تفاصيل العرض بالانجليزية',
+    'offer details_ar'=>'تفاصيل العرض بالعربية',
+    'save offer'=>'حفظ العرض',
+    'store'=>'متجر',
+    'offer_name'=>'اسم العرض',
+    'offer_price'=>'سعر العرض',
+    'offer_details'=>'تفاصيل العرض',
+
 
 ];

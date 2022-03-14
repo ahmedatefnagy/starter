@@ -67,7 +67,7 @@
     <body>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
+                        <a class="navbar-brand" href="#">{{trans('messages.store')}}</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -96,7 +96,7 @@
                 <div class="flex-center position-ref full-height">
                     <div class="content">
                         <div class="title m-b-md">
-                            Add your offer
+                            {{trans('messages.add your offer')}}
                         </div>
                         @if(Session::has('success'))
                         <div class="alert alert-primary" role="alert">
@@ -108,30 +108,46 @@
                             @csrf
 
                             <div class="mb-3">
-                                <label for="inputName" class="form-label">Offer Name</label>
-                                <input type="text" name="name"  class="form-control" id="inputName" aria-describedby="nameHelp">
-                                @error('name')
+                                <label for="inputName" class="form-label">{{trans('messages.offer name_en')}}</label>
+                                <input type="text" name="name_en"  class="form-control" id="inputName" aria-describedby="nameHelp">
+                                @error('name_en')
                                 <div id="nameHelp" class="form-text text-danger">{{$message}}</div>
                                 @enderror
                             </div>
 
                             <div class="mb-3">
-                                <label for="inputPrice" class="form-label">Offer Price</label>
+                                <label for="inputName" class="form-label">{{trans('messages.offer name_ar')}}</label>
+                                <input type="text" name="name_ar"  class="form-control" id="inputName" aria-describedby="nameHelp">
+                                @error('name_ar')
+                                <div id="nameHelp" class="form-text text-danger">{{$message}}</div>
+                                @enderror
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="inputPrice" class="form-label">{{trans('messages.offer price')}}</label>
                                 <input type="text" name="price"  class="form-control" id="inputPrice" aria-describedby="priceHelp">
-                                 @error('price')
+                                @error('price')
                                 <div id="priceHelp" class="form-text text-danger">{{$message}}</div>
                                 @enderror
                             </div>
 
                             <div class="mb-3">
-                                <label for="inputDetails" class="form-label">Offer Details</label>
-                                <input type="text" name="details"  class="form-control" id="inputDetails" aria-describedby="detailsHelp">
-                                 @error('details')
+                                <label for="inputDetails" class="form-label">{{trans('messages.offer details_en')}}</label>
+                                <input type="text" name="details_en"  class="form-control" id="inputDetails" aria-describedby="detailsHelp">
+                                 @error('details_en')
                                 <div id="detailsHelp" class="form-text text-danger">{{$message}}</div>
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Save Offer</button>
+                            <div class="mb-3">
+                                <label for="inputDetails" class="form-label">{{trans('messages.offer details_ar')}}</label>
+                                <input type="text" name="details_ar"  class="form-control" id="inputDetails" aria-describedby="detailsHelp">
+                                @error('details_ar')
+                                <div id="detailsHelp" class="form-text text-danger">{{$message}}</div>
+                                @enderror
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">{{trans('messages.save offer')}}</button>
                         </form>
                     </div>
                 </div>
